@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design & Build | Modern Cabanas & Steel Structures</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="Design & Build Logo">
+                Design & Build
+            </div>
+            <nav class="tabs">
+                <button class="tab-btn active" onclick="openTab('home', event)">Home</button>
+                <button class="tab-btn" onclick="openTab('about', event)">About Us</button>
+                <button class="tab-btn" onclick="openTab('pricing', event)">Pricing & Services</button>
+                <button class="tab-btn" onclick="openTab('contact', event)">Contact</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HOME TAB -->
+        <section id="home" class="tab-content active">
+            <div class="hero">
+                <div>
+                    <h1>Turning Ideas Into Functional, Beautiful Spaces.</h1>
+                    <p>Experts in Modern Cabanas, Steel Structures, Outdoor Spaces, and Custom Construction in Sri Lanka.</p>
+                    <button class="btn" onclick="openTab('contact', event)">Start Your Project Today</button>
+                </div>
+            </div>
+            <div class="container" style="text-align: center; padding: 60px 20px;">
+                <h2>Precision Engineering Meets Modern Design</h2>
+                <p style="max-width: 800px; margin: 20px auto; color: #666;">From AutoCAD concepts to reality, we build robust, weather-resistant, and aesthetically pleasing structures tailored to your lifestyle and business needs.</p>
+            </div>
+        </section>
+
+        <!-- ABOUT TAB -->
+        <section id="about" class="tab-content">
+            <div class="section-header">
+                <h2>About Design & Build</h2>
+                <p>Your trusted partner for architectural metal solutions and modern construction.</p>
+            </div>
+            <div class="container about-grid">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Construction Work" class="about-img">
+                </div>
+                <div>
+                    <h3 style="color: var(--primary); margin-bottom: 15px; font-size: 1.8rem;">Quality Without Compromise</h3>
+                    <p style="margin-bottom: 15px;">At Design & Build, we specialize in high-grade Galvanized Steel (GI) fabrication. We do not just assemble; we engineer solutions that last for decades without rusting or degrading.</p>
+                    <p style="margin-bottom: 15px;">Our workflow ensures absolute transparency. We provide clear 2D/3D plans, accurate cost estimations before starting, and execute the physical construction with unmatched precision.</p>
+                    <ul style="list-style: none; margin-top: 20px;">
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 10px;"></i> Advanced AutoCAD & 3D Modeling</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 10px;"></i> Weather-Resistant Materials</li>
+                        <li style="margin-bottom: 10px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 10px;"></i> On-Site Fabrication & Assembly</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING TAB -->
+        <section id="pricing" class="tab-content">
+            <div class="section-header">
+                <h2>Transparent Pricing</h2>
+                <p>High-quality construction tailored to your budget. No hidden costs.</p>
+            </div>
+            <div class="container pricing-grid">
+                <!-- Pricing Card 1 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Luxury Dog Cages</h3>
+                        <div class="price"><span>LKR</span> 48,000<span> /upwards</span></div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-paw"></i> Standard 6x4 ft Size</li>
+                        <li><i class="fas fa-shield-alt"></i> 100% GI Box Bar (Rust-proof)</li>
+                        <li><i class="fas fa-home"></i> Modern Gable Roof</li>
+                        <li><i class="fas fa-tools"></i> 10-Year Durability</li>
+                    </ul>
+                    <button class="btn" onclick="openTab('contact', event)">Get Quote</button>
+                </div>
+
+                <!-- Pricing Card 2 -->
+                <div class="pricing-card" style="transform: scale(1.05); border: 2px solid var(--secondary);">
+                    <div class="pricing-header" style="background: var(--btn-gradient);">
+                        <h3>Modern Steel Cabanas</h3>
+                        <div class="price">Custom Quote</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-drafting-compass"></i> Custom 3D & AutoCAD Design</li>
+                        <li><i class="fas fa-layer-group"></i> Heavy-duty Steel Framing</li>
+                        <li><i class="fas fa-cloud-sun"></i> Premium Weather-Resistant Roof</li>
+                        <li><i class="fas fa-couch"></i> Open Lounge Concept</li>
+                    </ul>
+                    <button class="btn" onclick="openTab('contact', event)">Discuss Project</button>
+                </div>
+
+                <!-- Pricing Card 3 -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Industrial & Agricultural</h3>
+                        <div class="price">Custom Quote</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-warehouse"></i> Large-scale Polytunnels</li>
+                        <li><i class="fas fa-hammer"></i> Steel Roofing Structures</li>
+                        <li><i class="fas fa-ruler-combined"></i> Precision Site Erection</li>
+                        <li><i class="fas fa-truck"></i> Island-wide Material Delivery</li>
+                    </ul>
+                    <button class="btn" onclick="openTab('contact', event)">Get Quote</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT TAB -->
+        <section id="contact" class="tab-content">
+            <div class="section-header">
+                <h2>Let's Build Something Great</h2>
+                <p>Contact us today for a free consultation and accurate cost estimation.</p>
+            </div>
+            <div class="container">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p style="margin-bottom: 30px; color: #666;">We provide island-wide services. Reach out to discuss your custom dimensions, design preferences, and receive a transparent quote.</p>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Service Area:</strong><br>
+                                All Island Delivery & Construction
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <strong>Phone:</strong><br>
+                                <a href="tel:+94702949110" style="color: inherit; text-decoration: none;">+94 702949110</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong><br>
+                                <a href="mailto:info@designandbuild.lk" style="color: inherit; text-decoration: none;">info@designandbuild.lk</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: var(--bg-light); border-radius: 10px; padding: 30px;">
+                        <h3 style="color: var(--primary); margin-bottom: 15px;">Fastest Response</h3>
+                        <p style="margin-bottom: 25px; color: #555;">Send us your requirements, rough dimensions, or ideas directly on WhatsApp.</p>
+                        <a href="https://wa.me/94702949110" target="_blank" class="btn contact-btn">
+                            <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i> Message on WhatsApp
+                        </a>
+                        <br>
+                        <a href="https://www.facebook.com/share/1BsSAzi3uk/" target="_blank" class="btn" style="background: #1877F2; margin-top: 10px; display: inline-flex; align-items: center; gap: 10px;">
+                            <i class="fab fa-facebook" style="font-size: 1.5rem;"></i> Visit Facebook Page
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
